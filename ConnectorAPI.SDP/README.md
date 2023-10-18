@@ -1,4 +1,4 @@
-# Skyline.DataMiner.Utils.NAME
+# Skyline.DataMiner.ConnectorAPI.SDP
 
 ## About
 

@@ -2,7 +2,7 @@
 
 using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
-public class SDPFileMessage : Message
+public class GetSDPFileMessage : Message
 {
 	public Guid SenderId { get; set; }
 }
