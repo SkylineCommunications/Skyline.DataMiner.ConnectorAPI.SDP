@@ -1,9 +1,13 @@
-﻿using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
-using System;
-
-public class GetSDPFileResponseMessage : Message
+﻿namespace Skyline.DataMiner.ConnectorAPI.SDP
 {
-    public Guid SenderId { get; set; }
+    using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
 
-    public string SDPFileContent { get; set; }
+    using System;
+
+    public class GetSDPFileResponseMessage : Message
+    {
+        public Guid SenderId { get; set; }
+
+        public string SDPFileContent { get; set; }
+    }
 }

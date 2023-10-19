@@ -1,8 +1,11 @@
-﻿using System;
-
-using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
-
-public class GetSDPFileMessage : Message
+﻿namespace Skyline.DataMiner.ConnectorAPI.SDP
 {
-	public Guid SenderId { get; set; }
+	using System;
+
+	using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
+
+	public class GetSDPFileMessage : Message
+	{
+		public Guid SenderId { get; set; }
+	}
 }

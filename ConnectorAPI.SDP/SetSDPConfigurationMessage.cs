@@ -1,11 +1,14 @@
-﻿using System;
-
-using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
-
-public class SetSDPConfigurationMessage : Message
+﻿namespace Skyline.DataMiner.ConnectorAPI.SDP
 {
-    public Guid Id { get; set; }
-    public string SDPFileContent { get; set; }
+    using System;
 
-    public DateTime Timestamp { get; set; }
+    using Skyline.DataMiner.Core.InterAppCalls.Common.CallSingle;
+
+    public class SetSDPConfigurationMessage : Message
+    {
+        public Guid Id { get; set; }
+        public string SDPFileContent { get; set; }
+
+        public DateTime Timestamp { get; set; }
+    }
 }
