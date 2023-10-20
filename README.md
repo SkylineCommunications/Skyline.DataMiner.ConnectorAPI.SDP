@@ -1,4 +1,4 @@
-# Skyline.DataMiner.Utils.NAME
+# Skyline.DataMiner.ConnectorAPI.SDP
 
 ## About
 
@@ -6,7 +6,7 @@ This solution holds the connector API (Inter-App Calls/Messages) for DataMiner e
 
 ## Projects
 
-* For more information about Skyline.DataMiner.Utils.NAME, see [Utils.NAME/README.md](Utils.NAME/README.md).
+* For more information about Skyline.DataMiner.ConnectorAPI.SDP, see [ConnectorAPI.SDP/README.md](ConnectorAPI.SDP/README.md).
 
 ### About DataMiner
 
