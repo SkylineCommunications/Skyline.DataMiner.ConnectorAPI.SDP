@@ -9,11 +9,16 @@
 
 	public static class KnownTypes
 	{
-		public static IEnumerable<Type> GetList()
+		private static readonly Lazy<Type[]> _knownTypes = new Lazy<Type[]>(GetKnownTypes);
+
+		public static ICollection<Type> Types => _knownTypes.Value;
+
+		private static Type[] GetKnownTypes()
 		{
 			return Assembly.GetExecutingAssembly()
 				.GetTypes()
-				.Where(x => x.IsSubclassOf(typeof(Message)));
+				.Where(x => x.IsSubclassOf(typeof(Message)))
+				.ToArray();
 		}
 	}
 }
